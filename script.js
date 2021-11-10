@@ -1,9 +1,9 @@
-const root = new Vue()({
+const root = new Vue({
 
   el: '#root',
 
   data: {
-
+    greeting: "Hello World",
   }
 
 
@@ -11,7 +11,7 @@ const root = new Vue()({
 
 
 
-})
+});
 
 
                           
