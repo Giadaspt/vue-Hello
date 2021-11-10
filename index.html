@@ -12,15 +12,20 @@
 
 <body>
 
-  <div id="root" class="container d-flex flex-column justify-content-center align-items-center pt-5">
+  <div id="root" class="d-flex flex-column justify-content-center align-items-center pt-5">
 
-    <h1 v-model="greeting" class="pb-3"> {{greeting}} </h1>
+    <h1 class="pb-3"> {{greeting}} </h1>
     <div v-html="image"></div> 
 
     <div class="d-block">
-      <input v-model="add" type="text">
-      <h2>{{add}}</h2>
-      <button ></button>
+      <input v-model="add" type="text" @keyup="funzioneKeyup">
+      <!-- <h2 :class="color"> {{add}} </h2>
+      <h2 :class="color2"> {{add}} </h2> -->
+      <h2 :class="color"> {{add}} </h2>
+      <button  class="btn bg-success" @click="miaFunct"> Cliccami e cambia colore </button> <br>
+      <button  class="btn bg-primary" @click="miaFunct2"> Cliccami e cambia colore </button> <br>
+      <button  class="btn bg-warning" @click="miaFunct3('green')"> Cliccami e cambia colore </button> <br>
+
     </div>
 
 
