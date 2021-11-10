@@ -5,12 +5,9 @@ const root = new Vue({
   data: {
     greeting: "Hello World",
     add: '',
-    image: '<img src="jae-park-7GX5aICb5i4-unsplash.jpg">',
+    image: '<img class="image" src="jae-park-7GX5aICb5i4-unsplash.jpg">',
     
   },
-
-
-
 
 });
 
